@@ -1,0 +1,29 @@
+body {
+	background-image: url("../images/symphony.png");
+}
+
+/*.row {
+	margin: auto 0;
+}*/
+
+header {
+	margin: 10px;
+	text-align: center;
+}
+
+#rules, #random, #WinLose, #total, #score, #crystals {
+	border: 1px #444 solid;
+	margin: 5px auto;
+	text-align: center;
+}
+
+#rules {
+	background-color: mistyrose;
+	padding: 5px;
+
+}
+
+#crystals {
+	border: none;
+	text-align: center;
+}

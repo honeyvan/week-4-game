@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Game</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<header>
+		<h1>Crystal Collector!</h1>
+	</header>
+
+	<div id="container">
+		<div class="row">
+		<div id="rules" class="col-md-6">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<p>Each time when the game starts, the game will change the values of the crystals.</p>
+		</div>
+		</div> <!-- close row -->
+
+		<div class="row">
+		<div class="col-md-3"></div>
+		<div id="random" class="col-md-3">
+			<h1 id="randomNum">0</h1>
+		</div> 
+
+		<div id="WinLose" class="col-md-3">
+			<p id="wins">Wins: 0</p>
+			<p id="losses">Losses: 0</p>
+		</div>
+		<div class="col-md-3"></div>
+
+		</div> <!-- close row -->
+
+		<div class="row">
+		<div id="crystals" class="col-md-8">
+			<img id="crystal1" alt="crys1" src="assets/images/1.png">
+			<img id="crystal2" alt="crys2" src="assets/images/2.png">
+			<img id="crystal3" alt="crys3" src="assets/images/3.png">
+			<img id="crystal4" alt="crys4" src="assets/images/4.png">
+		</div>
+		</div> <!-- close row -->
+
+		<div class="row">
+		<div class="col-md-3"></div>
+		<div id="total" class="col-md-3">
+			<p>Your total score is:</p>
+		</div>
+
+		<div id="score" class="col-md-3">
+			<h1 id="userScore">0</h1>
+		</div>
+		<div class="col-md-3"></div>
+		</div> <!-- close row -->
+
+	</div>
+
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
